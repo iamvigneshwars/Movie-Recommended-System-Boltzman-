@@ -4,7 +4,7 @@ This is a simple movie recommendation system which predicts if the user will lik
 
 ## Algorithm Used
 
-Boltzman Machines is used in this project
+Restriced Boltzman Machines algorithm is used in this project
 
 ## Data Preprocessing 
 
