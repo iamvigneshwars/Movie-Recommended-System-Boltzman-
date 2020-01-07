@@ -58,3 +58,31 @@ test_set[test_set == 0] = -1
 test_set[test_set == 1] = 0
 test_set[test_set == 2] = 0
 test_set[test_set >= 3] = 1
+
+# Architecture of the Neural Network
+class RBM():
+    def __init__(self, nv, nh):
+        self.W = torch.randn(nh, nv)
+        self.a = torch.randn(1, nh)
+        self.b = torch.randn(1, nv)
+    def sample(self, x):
+        wx = torch.mm(x, self.w.t())
+        activation = wx + self.a.expand_as(wx)
+        p_h_given_v = torch.sigmoid(activation)
+        return p_h_given_v, torch.bernoulli(p_h_given_v)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
