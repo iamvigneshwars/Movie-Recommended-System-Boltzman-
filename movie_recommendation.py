@@ -48,3 +48,13 @@ test_set = convert(test_set)
 # Converting the data in to Torch Tensors
 training_set = torch.FloatTensor(training_set)
 test_set = torch.FloatTensor(test_set)
+
+# Converting the rating into Binary ratings 1 (Likes) ratring 0 (Not Liked)
+training_set[training_set == 0] = -1
+training_set[training_set == 1] = 0
+training_set[training_set == 2] = 0
+training_set[training_set >= 3] = 1
+test_set[test_set == 0] = -1
+test_set[test_set == 1] = 0
+test_set[test_set == 2] = 0
+test_set[test_set >= 3] = 1
