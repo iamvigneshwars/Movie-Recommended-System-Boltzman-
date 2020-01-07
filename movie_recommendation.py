@@ -45,3 +45,6 @@ def convert(data):
 training_set = convert(training_set)
 test_set = convert(test_set)
 
+# Converting the data in to Torch Tensors
+training_set = torch.FloatTensor(training_set)
+test_set = torch.FloatTensor(test_set)
