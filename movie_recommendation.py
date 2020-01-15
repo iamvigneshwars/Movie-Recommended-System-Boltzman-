@@ -114,7 +114,10 @@ for id_user in range(nb_users):
         _,v = rbm.sample_v(h)
         test_loss += torch.mean(torch.abs(vt[vt>=0] - v[vt>=0]))
         s += 1.
+
 print('test loss: '+str(test_loss/s))
+print('test loss: '+str(test_loss/s))
+
 
 
 
