@@ -116,7 +116,6 @@ for id_user in range(nb_users):
         s += 1.
 
 print('test loss: '+str(test_loss/s))
-print('test loss: '+str(test_loss/s))
 
 
 
