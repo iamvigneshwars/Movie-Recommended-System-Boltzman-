@@ -117,7 +117,6 @@ for id_user in range(nb_users):
 
 print('test loss: '+str(test_loss/s))
 
-irint(chat)
 
 
 
